@@ -3,7 +3,7 @@ const UPoLPrefix = [
   '-ai',
   'sumi',
   '/ai',
-  'tom',
+  'princes',
   'ask'
 ]; 
 
@@ -28,7 +28,7 @@ const UPoLPrefix = [
       
      const upol = event.body.substring(ahprefix.length).trim();
    if (!upol) {
-        await message.reply('𝐄𝐧𝐭𝐞𝐫 𝐚 𝐪𝐮𝐞𝐬𝐭𝐢𝐨𝐧..? 🥹');
+        await message.reply('yes how can i help you .? 💘');
         return;
       }
       
@@ -44,7 +44,7 @@ const UPoLPrefix = [
       
     const encodedPrompt = encodeURIComponent(args.join(" "));
 
-   await message.reply('𝐓𝐨𝐦 𝐚𝐧𝐬𝐰𝐞𝐫𝐢𝐧𝐠 𝐲𝐨𝐮𝐫 𝐪𝐮𝐞𝐬𝐭𝐢𝐨𝐧. 𝐩𝐥𝐞𝐚𝐬𝐞 𝐰𝐚𝐢𝐭 𝐚 𝐦𝐨𝐦𝐞𝐧𝐭...');
+   await message.reply('princes 𝐚𝐧𝐬𝐰𝐞𝐫𝐢𝐧𝐠 𝐲𝐨𝐮𝐫 𝐪𝐮𝐞𝐬𝐭𝐢𝐨𝐧. 𝐩𝐥𝐞𝐚𝐬𝐞 𝐰𝐚𝐢𝐭 𝐚 𝐦𝐨𝐦𝐞𝐧𝐭...');
   
     const response = await axios.get(`https://sandipbaruwal.onrender.com/gemini?prompt=${encodedPrompt}`);
  
